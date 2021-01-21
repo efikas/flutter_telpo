@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
+            Image.asset("assets/images/icon.png"),
             Center(
               child: Text('Running on: $_platformVersion\n'),
             ),
@@ -74,6 +75,7 @@ class TestPrintables {
           ]);
           _printables.addAll([
             PrintRow(text: "TESTING", fontSize: 2, position: 1),
+            PrintImage(pathUrl: "assets/images/icon.png", height: 250, width: 250, position: 1),
             PrintRow(
                 text: "*****************************",
                 fontSize: 1,
